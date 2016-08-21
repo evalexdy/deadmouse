@@ -22,8 +22,173 @@
       <h1>
 <a id="deadmouse" class="anchor" href="#deadmouse" aria-hidden="true"><span aria-hidden="true" class="octicon octicon-link"></span></a>deadmouse</h1>
 
-<p>just a CSS project for fun only
-Attempt to draw dead mouse flag in CSS</p>
+<!DOCTYPE>
+<html>
+<head>
+<title>Dead mouse</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="keywords" content="">
+<meta name="description" content="">
+<style>
+html,body {
+	height:100%;
+}
+body {
+	margin:0px;
+	padding:0px;
+}
+.maindiv {
+	width:256px;
+	height:256px;
+	position:relative;
+	background: repeating-linear-gradient(
+		-45deg,
+		transparent,
+		transparent 10px,
+		#000 10px,
+		#000 20px
+	),#fdea4d;
+	border-radius:5px;
+}
+	.maindiv .inner {
+		width:227px;
+		height:227px;
+		position:absolute;
+		top:15px;
+		left:15px;
+		background-color:#fdea4d;
+		border-radius:5px;
+	}
+	.maindiv .inner .faceshape {
+		position:absolute;
+		top:50px;
+		left:73px;
+		width: 80px;
+		height: 80px;
+		border-radius: 0 70% 60% 70%;
+		background-color:#000;
+		border: 3px solid #fdea4d;
+		transform: rotate(-135deg);
+		z-index:2;
+	}
+	.maindiv .inner .ear {
+		position:absolute;
+		top:30px;
+		border-radius:50%;
+		width:50px;
+		height:50px;
+		background-color:#000;
+		z-index:1;
+	}
+	.maindiv .inner .ear.left {
+		left:53px;	
+	}
+	.maindiv .inner .ear.right {
+		left:123px;	
+	}
+	.maindiv .inner .nose {
+		position:absolute;
+		top:135px;
+		left:105px;
+		width: 15px;
+		height: 10px;
+		background-color:#000;
+		border: 3px solid #fdea4d;
+		z-index:3;
+		border-radius:15px;
+	}
+	.maindiv .inner .bone {
+		position:absolute;
+		top:160px;
+		left:55px;
+		width: 120px;
+		height: 10px;
+		background-color:#000;
+	}
+	.maindiv .inner .bone.num1 {
+		transform: rotate(15deg);
+	}
+		.maindiv .inner .bone div {
+			position:absolute;
+			width:10px;
+			height:10px;
+			border-radius:5px;
+			background-color:#000;
+		}
+		.maindiv .inner .bone .bone1 {
+			top:-4px;
+			left:-2px;
+		}
+		.maindiv .inner .bone .bone2 {
+			top:3px;
+			left:-2px;
+		}
+		.maindiv .inner .bone .bone3 {
+			top:-4px;
+			right:-2px;
+		}
+		.maindiv .inner .bone .bone4 {
+			top:3px;
+			right:-2px;
+		}
+		
+	.maindiv .inner .bone.num2 {
+		transform: rotate(-15deg);
+	}
+	.maindiv .inner .eye {
+		position:absolute;
+		width: 35px;
+		height: 23px;
+		background: #fdea4d;
+		border-radius: 35px/23px;
+		z-index:4;
+	}
+	.maindiv .inner .eye.num1 {
+		transform: rotate(55deg);
+		top:70px;
+		left:115px;
+	}
+	.maindiv .inner .eye.num2 {
+		transform: rotate(-55deg);
+		top:70px;
+		left:80px;
+	}
+
+
+
+
+</style>
+
+</head>
+
+<body>
+<div class="maindiv">
+	<div class="inner">
+		<div class="eye num1"></div>
+		<div class="eye num2"></div>
+		<div class="ear left"></div>
+		<div class="ear right"></div>
+		<div class="faceshape"></div>
+		<div class="nose"></div>
+		<div class="bone num1">
+			<div class="bone1"></div>
+			<div class="bone2"></div>
+			<div class="bone3"></div>
+			<div class="bone4"></div>
+		</div>
+		<div class="bone num2">
+			<div class="bone1"></div>
+			<div class="bone2"></div>
+			<div class="bone3"></div>
+			<div class="bone4"></div>
+		</div>
+		
+	</div>
+</div>
+</body>
+</html>
+
+
 
       <footer class="site-footer">
         <span class="site-footer-owner"><a href="https://github.com/evalexdy/deadmouse">Deadmouse</a> is maintained by <a href="https://github.com/evalexdy">evalexdy</a>.</span>
